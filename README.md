@@ -10,7 +10,7 @@
 ---
 ###  演示
 
-![](http://img.hi-cat.cn/655f17c454e415e057dbe03b73747b5c)
+![](img/1596460083591961.gif)
 
 项目地址： 
 https://github.com/ilpanda/live_demo
@@ -50,7 +50,7 @@ Demo 实现的功能仅仅是布局，没有实现直播以及 IM 功能，因�
 2. 根据当前直播的直播间 id ，以及直播列表的类型，获取上一个直播以及下一个直播，从而实现无限滑动。
 
 这里主要贴下第二个接口（京东对接口做了校验，第二次请求时会失效，因此这里贴个图片，就不贴接口了）：
-![](http://img.hi-cat.cn/6a7ec6be563434772602ad92ec5d06a2)
+![](img/6a7ec6be563434772602ad.png)
 
 ---
 ### Demo 中的上下滑动实现 - 方案（1）
@@ -90,7 +90,7 @@ https://www.hi-cat.cn/api/live?page=1&count=10
 ### 项目的基础结构
 项目基础结构如下： 
 
-![](http://img.hi-cat.cn/913bfe4906a1cdaa23f188c0762c5e5a)
+![](img/913bfe4906a1cdaa23f188c.png)
 
 1. BaseApplication 初始化日志以及 UncaughtExceptionHandler ，主要用于日志打印和异常捕获，不影响这个项目。
 2. MainActivity  应用的入口 Activity，该页面有两个入口，直播列表页面的数据完全一样，直播列表点击进入直播间以后，使用不同的服务器接口来实现上下滑动。
