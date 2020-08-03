@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rly_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.ilpanda.live_demo.wiget.VerticalViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never" />
+
+
+    <com.ilpanda.live_demo.wiget.LiveGuideView
+        android:id="@+id/guide_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+
+    <com.ilpanda.live_demo.wiget.LoadingView
+        android:id="@+id/activity_view_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible" />
+
+
+</RelativeLayout>

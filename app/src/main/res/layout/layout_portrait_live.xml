@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/room_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_live_bg">
+
+    <include
+        android:id="@+id/rly_header"
+        layout="@layout/layout_portrait_live_header" />
+
+
+    <RelativeLayout
+        android:id="@+id/rly_live_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rly_header"
+        android:layout_marginLeft="10dp">
+
+
+        <LinearLayout
+            android:id="@+id/ll_live_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:background="@drawable/bg_live_list_logo"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingTop="2dp"
+                android:paddingRight="11dp"
+                android:paddingBottom="2dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/img_live_small_logo" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:text="直播广场"
+                    android:textColor="#ffffffff"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:layout_width="6dp"
+                    android:layout_height="10dp"
+                    android:layout_marginLeft="6dp"
+                    android:src="@drawable/img_live_small_arrow" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <com.ilpanda.live_demo.wiget.gift.GiftAnimatorView
+        android:id="@+id/view_gift_animator"
+        android:layout_width="match_parent"
+        android:layout_height="120dp" />
+
+    <ListView
+        android:id="@+id/lv_chat_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:layout_above="@+id/layout_Bottom"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="15dp"
+        android:cacheColorHint="#00000000"
+        android:divider="#3c421b1b"
+        android:overScrollMode="never"
+        android:padding="2dp"
+        android:scrollbarStyle="outsideOverlay"
+        android:scrollbars="none"
+        android:stackFromBottom="true"
+        android:transcriptMode="normal"
+        android:visibility="visible" />
+
+    <include
+        android:id="@+id/layout_Bottom"
+        layout="@layout/layout_portrait_live_audience_bottom" />
+
+
+    <com.ilpanda.live_demo.wiget.heart.TCHeartLayout
+        android:id="@+id/heart_layout"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="15dp"
+        android:focusable="true"
+        app:initX="30dp"
+        app:rotation="right"
+        app:xRand="30dp" />
+
+    <include
+        android:id="@+id/play_loading"
+        layout="@layout/layout_portrait_live_play_item"
+        android:visibility="gone" />
+
+
+</RelativeLayout>

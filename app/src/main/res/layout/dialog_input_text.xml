@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_outside_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/ll_input_view"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_input_message"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:hint="赶紧互动增加人气啦"
+            android:imeActionId="@+id/send"
+            android:imeActionLabel="发送"
+            android:imeOptions="actionSend|flagNoExtractUi|flagNoFullscreen"
+            android:inputType="text"
+            android:maxLength="35"
+            android:maxLines="1"
+            android:textColorHint="#CCCCCC"
+            android:windowSoftInputMode="adjustPan"
+            tools:ignore="InvalidImeActionId" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

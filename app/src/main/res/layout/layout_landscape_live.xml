@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/room_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#333333"
+    tools:ignore="contentDescription">
+
+
+    <RelativeLayout
+        android:id="@+id/rly_video"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@+id/layout_live_anchor_info"
+        android:layout_marginTop="48dp"
+        android:background="@color/black">
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerInParent="true"
+            android:indeterminateDrawable="@drawable/app_progress_bar"
+            android:visibility="visible" />
+
+        <master.flame.danmaku.ui.widget.DanmakuView
+            android:id="@+id/anchor_danmu_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp" />
+
+    </RelativeLayout>
+
+
+    <include
+        android:id="@+id/layout_live_anchor_info"
+        layout="@layout/layout_landscape_live_anchor_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginRight="13dp"
+        android:visibility="visible" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_live_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_live_anchor_info"
+        android:layout_alignParentRight="true"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:background="@drawable/bg_live_list_logo"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingTop="2dp"
+            android:paddingRight="11dp"
+            android:paddingBottom="2dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/img_live_small_logo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:text="直播广场"
+                android:textColor="#ffffffff"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:layout_width="6dp"
+                android:layout_height="10dp"
+                android:layout_marginLeft="6dp"
+                android:src="@drawable/img_live_small_arrow" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rly_chat_msg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rly_video">
+
+        <ListView
+            android:id="@+id/lv_chat_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/layout_Bottom"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="15dp"
+            android:cacheColorHint="#00000000"
+            android:divider="#3c421b1b"
+            android:overScrollMode="never"
+            android:padding="2dp"
+            android:scrollbarStyle="outsideOverlay"
+            android:scrollbars="none"
+            android:stackFromBottom="true"
+            android:transcriptMode="normal"
+            android:visibility="visible" />
+
+        <include
+            android:id="@+id/layout_Bottom"
+            layout="@layout/layout_audience_bottom" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_change_orientation"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_alignBottom="@id/rly_video"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/img_change_landscape" />
+
+
+    <ImageView
+        android:id="@+id/iv_lock_screen"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8dp"
+        android:src="@drawable/img_lock_screen"
+        android:visibility="gone" />
+
+</RelativeLayout>

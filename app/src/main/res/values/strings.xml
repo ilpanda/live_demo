@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">live_demo</string>
+    <string name="live_warn_message">系统消息: 欢迎来到直播间！如直播间出现违法违规行为，请及时举报。感谢你与AC娘一起努力，守护我们共同的社区。AC在,爱一直在！</string>
+
+</resources>

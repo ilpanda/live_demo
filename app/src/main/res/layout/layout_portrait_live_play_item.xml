@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_live_bg">
+
+
+    <ImageView
+        android:id="@+id/play_iv_back"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="32dp"
+        android:layout_marginRight="3dp"
+        android:padding="9dp"
+        android:src="@drawable/img_portrait_live_back" />
+
+    <ImageView
+        android:id="@+id/iv_loading"
+        android:layout_width="50dp"
+        android:layout_height="10dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/loading_animation" />
+
+
+</RelativeLayout>

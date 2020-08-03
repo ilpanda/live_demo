@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_margin="8dp"
+    android:gravity="center_vertical">
+
+    <Button
+        android:id="@+id/btn_message_input"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/iv_danmu"
+        android:background="@drawable/bg_landscape_input"
+        android:gravity="center_vertical"
+        android:paddingLeft="13dp"
+        android:text="来个弹幕呗，嗷嗷..."
+        android:textColor="#ffebebeb"
+        android:textSize="15sp" />
+
+    <ImageView
+        android:id="@+id/iv_danmu"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="12dp"
+        android:layout_toLeftOf="@id/iv_share"
+        android:src="@drawable/img_danmu_open" />
+
+
+    <ImageView
+        android:id="@+id/iv_share"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="12dp"
+        android:src="@drawable/img_landscape_share"
+        android:visibility="visible" />
+
+
+</RelativeLayout>

@@ -1,0 +1,2 @@
+rootProject.name='live_demo'
+include ':app'
