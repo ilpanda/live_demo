@@ -9,7 +9,7 @@ import com.ilpanda.live_demo.bean.LiveItemBean;
 
 public class LiveProxy implements LivePlayListener {
 
-    private PortraitLiveManager mPortraitLiveManager;
+    private HorizontalScrollPortraitLiveManager mPortraitLiveManager;
 
     private LandscapeLiveManager mLandscapeLiveManager;
 
@@ -17,7 +17,7 @@ public class LiveProxy implements LivePlayListener {
 
     public LiveProxy(Activity activity) {
         mLandscapeLiveManager = new LandscapeLiveManager(activity);
-        mPortraitLiveManager = new PortraitLiveManager(activity);
+        mPortraitLiveManager = new HorizontalScrollPortraitLiveManager(activity);
     }
 
 
